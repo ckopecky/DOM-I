@@ -96,25 +96,8 @@ console.log(mainContentH4);
 
 //paragraphs
 
-let pTag = document.getElementsByTagName('p');
-let servicesPTag = pTag[0];
-  servicesPTag.innerHTML = siteContent['main-content']['services-content'];
-let productPTag = pTag[1];
-  productPTag.innerHTML = siteContent['main-content']['product-content'];
-let visionPTag = pTag[2];
-  visionPTag.innerHTML = siteContent['main-content']['vision-content'];
-let featuresPTag = pTag[3];
-  featuresPTag.innerHTML = siteContent['main-content']['features-content'];
-let aboutPTag = pTag[4];
-  aboutPTag.innerHTML = siteContent['main-content']['about-content'];
-let addressPTag = pTag[5];
-  addressPTag.innerHTML = siteContent['contact']['address'];
-let phonePTag = pTag[6];
-  phonePTag.innerHTML = siteContent['contact']['phone'];
-let emailPTag = pTag[7];
-  emailPTag.innerHTML = siteContent['contact']['email'];
-let footerPTag = pTag[8];
-  footerPTag.innerHTML = siteContent['footer']['copyright'];
+const mainPTags = [siteContent["main-content"]["features-content"], siteContent["main-content"]["about-content"], siteContent["main-content"]["services-content"], siteContent["main-content"]["product-content"], siteContent["main-content"]["vision-content"] ];
+
 
 //middle img
 let middleImg = document.querySelector('.middle-img'); 
