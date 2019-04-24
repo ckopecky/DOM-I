@@ -112,6 +112,7 @@ console.log(contactH4);
 
 const contactPTags = [siteContent.contact.address, siteContent.contact.phone, siteContent.contact.email];
 
+const contactBlock = document.querySelectorAll(".contact p");
 
 //new navs
 
