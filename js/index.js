@@ -76,8 +76,12 @@ ctaImg.src = siteContent.cta["img-src"];
 console.log(ctaImg);
 
 
+//middle img
+
+const midImg = document.querySelector('#middle-img');
+midImg.src = siteContent["main-content"]["middle-img-src"];
+console.log(midImg);
 //main content
-//headlines
 
 let headline = document.getElementsByTagName('h4');
 let servicesHeadline = headline[0];
