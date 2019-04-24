@@ -129,6 +129,12 @@ console.log(copyright);
 
 //new navs
 
+//change each nav to green
+
+navAnchors.forEach(nav => {
+  nav.style.color = "green";
+})
+
 //create text node to append to "a" element that will then append to
 //"nav" element.
 
