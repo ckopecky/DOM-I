@@ -110,6 +110,8 @@ const contactH4 = document.querySelector(".contact h4");
 contactH4.textContent = siteContent.contact["contact-h4"];
 console.log(contactH4);
 
+const contactPTags = [siteContent.contact.address, siteContent.contact.phone, siteContent.contact.email];
+
 
 //new navs
 
