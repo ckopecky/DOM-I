@@ -138,19 +138,19 @@ navAnchors.forEach(nav => {
 //create text node to append to "a" element that will then append to
 //"nav" element.
 
-//append
-let navigator = document.querySelector('nav');
-let newNav = document.createElement('a');
-newNav.style.color = 'green';           
-let newNavText = document.createTextNode('Directions');
-newNav.setAttribute('href', '#');
-newNav.appendChild(newNavText);
-navigator.appendChild(newNav);  
+//append and prepend
 
-//prepend
-let newNavTwo = document.createElement('a');
-newNavTwo.style.color = 'green';
-let newNavTextTwo = document.createTextNode('Examples');
-newNavTwo.setAttribute('href', '#');
-newNavTwo.appendChild(newNavTextTwo);
-navigator.prepend(newNavTwo);
+const newAnchor = document.createElement('a');
+
+const newNewAnchor = document.createElement('a');
+
+newNewAnchor.textContent = "First";
+newAnchor.textContent = "Last";
+newNewAnchor.style.color = "green";
+newAnchor.style.color = "green";
+
+const navigation = document.querySelector('nav');
+
+navigation.prepend(newNewAnchor);
+navigation.append(newAnchor);
+
