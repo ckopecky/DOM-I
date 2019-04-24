@@ -48,6 +48,11 @@ for( let i = 0; i < Array.from(navAnchors).length; i++){
   const newArray = Array.from(navAnchors)[i];
   newArray.textContent = anchorContent[i];
 }
+  //logo
+const logoImg = document.getElementById('logo-img');
+logoImg.src = siteContent.nav["img-src"];
+console.log(logoImg);
+//cta
 
 let logo = document.querySelector('#logo-img'); 
   logo.setAttribute('src', siteContent['nav']['img-src']); 
