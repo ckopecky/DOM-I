@@ -54,19 +54,27 @@ logoImg.src = siteContent.nav["img-src"];
 console.log(logoImg);
 //cta
 
-let logo = document.querySelector('#logo-img'); 
-  logo.setAttribute('src', siteContent['nav']['img-src']); 
+let ctaText = document.querySelector('section div h1');
 
-//cta
-//text
-let ctaText = document.querySelector('.cta-text h1');
-  ctaText.innerHTML = siteContent['cta']['h1'];
+let h1Text = siteContent.cta.h1;
+ctaText.textContent = h1Text;
+console.log(ctaText);
+
 //button
-let ctaBut = document.querySelector('.cta-text button');
- ctaBut.innerHTML = siteContent['cta']['button'];
- //circle image
-let ctaImg = document.querySelector('.cta img'); 
-  ctaImg.setAttribute('src', siteContent['cta']['img-src']); 
+
+let ctaBtn = document.querySelector('button');
+
+let buttonText = siteContent.cta.button;
+
+ctaBtn.textContent = buttonText;
+console.log(ctaBtn);
+
+//circle img
+
+let ctaImg = document.querySelector('#cta-img');
+ctaImg.src = siteContent.cta["img-src"];
+console.log(ctaImg);
+
 
 //main content
 //headlines
