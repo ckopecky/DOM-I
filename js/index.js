@@ -114,6 +114,10 @@ const contactPTags = [siteContent.contact.address, siteContent.contact.phone, si
 
 const contactBlock = document.querySelectorAll(".contact p");
 
+contactBlock.forEach((p, index) => {
+  p.textContent = contactPTags[index];
+  console.log(p);
+})
 //new navs
 
 //create text node to append to "a" element that will then append to
