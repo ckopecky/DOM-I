@@ -118,6 +118,15 @@ contactBlock.forEach((p, index) => {
   p.textContent = contactPTags[index];
   console.log(p);
 })
+
+let footer = document.getElementsByTagName('footer');
+
+footer = Array.from(footer);
+
+const copyright = footer[0].textContent = siteContent.footer.copyright;
+
+console.log(copyright);
+
 //new navs
 
 //create text node to append to "a" element that will then append to
