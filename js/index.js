@@ -106,9 +106,10 @@ mainContentPTag.forEach((p, index) => {
 
 //contact
 
-//middle img
-let middleImg = document.querySelector('.middle-img'); 
-  middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']) 
+const contactH4 = document.querySelector(".contact h4");
+contactH4.textContent = siteContent.contact["contact-h4"];
+console.log(contactH4);
+
 
 //new navs
 
