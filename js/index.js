@@ -38,27 +38,16 @@ const siteContent = { //this is an object with properties and values.
 };
 
 //nav menu
-let menu = document.getElementsByTagName('a');
-let services = menu[0];
-  services.innerHTML = siteContent['nav']['nav-item-1'];
-  services.style.color = 'green';
-let product = menu[1];
-  product.innerHTML = siteContent['nav']['nav-item-2'];
-  product.style.color = 'green';
-let vision = menu[2];
-  vision.innerHTML = siteContent['nav']['nav-item-3'];
-  vision.style.color = 'green';
-let features = menu[3];
-  features.innerHTML = siteContent['nav']['nav-item-4'];
-  features.style.color = 'green';
-let about = menu[4];
-  about.innerHTML = siteContent['nav']['nav-item-5'];
-  about.style.color = 'green';
-let contact = menu[5];
-  contact.innerHTML = siteContent['nav']['nav-item-6'];
-  contact.style.color = 'green';
+const navAnchors = document.querySelectorAll('nav a');
+// console.log(navAnchors);
 
+const anchorContent = Object.values(siteContent.nav);
+// console.log(anchorContent);
 
+for( let i = 0; i < Array.from(navAnchors).length; i++){
+  const newArray = Array.from(navAnchors)[i];
+  newArray.textContent = anchorContent[i];
+}
 
 let logo = document.querySelector('#logo-img'); 
   logo.setAttribute('src', siteContent['nav']['img-src']); 
