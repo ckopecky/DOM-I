@@ -83,19 +83,7 @@ midImg.src = siteContent["main-content"]["middle-img-src"];
 console.log(midImg);
 //main content
 
-let headline = document.getElementsByTagName('h4');
-let servicesHeadline = headline[0];
-  servicesHeadline.innerHTML = siteContent['main-content']['services-h4'];
-let productHeadline = headline[1];
-  productHeadline.innerHTML = siteContent['main-content']['product-h4'];
-let visionHeadline = headline[2];
-  visionHeadline.innerHTML = siteContent['main-content']['vision-h4'];
-let featuresHeadline = headline[3];
-  featuresHeadline.innerHTML = siteContent['main-content']['features-h4'];
-let aboutHeadline = headline[4];
-  aboutHeadline.innerHTML = siteContent['main-content']['about-h4'];
-let contactHeadline = headline[5];
-  contactHeadline.innerHTML = siteContent['contact']['contact-h4'];
+const HFours = [siteContent["main-content"]["features-h4"], siteContent["main-content"]["about-h4"], siteContent["main-content"]["services-h4"], siteContent["main-content"]["product-h4"], siteContent["main-content"]["vision-h4"] ];
 
 //paragraphs
 
