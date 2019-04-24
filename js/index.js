@@ -98,6 +98,13 @@ console.log(mainContentH4);
 
 const mainPTags = [siteContent["main-content"]["features-content"], siteContent["main-content"]["about-content"], siteContent["main-content"]["services-content"], siteContent["main-content"]["product-content"], siteContent["main-content"]["vision-content"] ];
 
+const mainContentPTag = document.querySelectorAll('.main-content p');
+mainContentPTag.forEach((p, index) => {
+  p.textContent = mainPTags[index];
+  console.log(p);
+});
+
+//contact
 
 //middle img
 let middleImg = document.querySelector('.middle-img'); 
