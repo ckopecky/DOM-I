@@ -85,6 +85,15 @@ console.log(midImg);
 
 const HFours = [siteContent["main-content"]["features-h4"], siteContent["main-content"]["about-h4"], siteContent["main-content"]["services-h4"], siteContent["main-content"]["product-h4"], siteContent["main-content"]["vision-h4"] ];
 
+
+const mainContentH4 = document.querySelectorAll('.main-content h4');
+mainContentH4.forEach((h4, index) => {
+  h4.textContent = HFours[index];
+  console.log(h4);
+});
+
+console.log(mainContentH4);
+
 //paragraphs
 
 let pTag = document.getElementsByTagName('p');
