@@ -148,6 +148,8 @@ newNewAnchor.textContent = "First";
 newAnchor.textContent = "Last";
 newNewAnchor.style.color = "green";
 newAnchor.style.color = "green";
+newAnchor.style.cursor = "pointer";
+newNewAnchor.style.cursor = "pointer";
 
 const navigation = document.querySelector('nav');
 
